@@ -1,6 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import Home from './Home';
 
+// beforeAll(() => {
+//   console.log("********* Before All Hook ***********");
+// });
+
+beforeEach(() => {
+  console.log("********* Before Each Hook ***********");
+});
+
 test('renders learn react link', () => {
   render(<Home />);
   const linkElement = screen.getByText(/learn react/i);
