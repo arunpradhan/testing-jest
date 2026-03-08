@@ -75,7 +75,7 @@ https://jestjs.io/docs/getting-started
 https://jestjs.io/docs/expect
 
 
-File and Folder naming convention:
+### File and Folder naming convention:
     1. As per the File Name
     - File_name.test.js
     - File_name.test.jsx
