@@ -73,3 +73,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### `npm run test` to run test cases
 https://jestjs.io/docs/getting-started
 https://jestjs.io/docs/expect
+
+
+File and Folder naming convention:
+    1. As per the File Name
+    - File_name.test.js
+    - File_name.test.jsx
+    - File_name.spec.js
+    - File_name.spec.jsx
+    2. As per the Folder Name no need to add test/spec with the file name
+    - __tests__

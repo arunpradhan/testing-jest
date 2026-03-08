@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import MyForm from "./MyForm";
+import MyForm from "../MyForm";
 
 test("Test MyForm", () => {
     render(<MyForm/>);
