@@ -7,6 +7,7 @@ import Home from './Home';
 import Navigation from './Navigation';
 import About from './About';
 import Users from './Users';
+import Item from './Item';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/my-form" element={<MyForm/>} />
         <Route path='/about' element={<About/>}/>
         <Route path='/users' element={<Users/>}/>
+        <Route path='/item' element={<Item />}/>
       </Routes>
     </BrowserRouter>
   );

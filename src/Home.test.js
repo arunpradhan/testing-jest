@@ -5,9 +5,9 @@ import Home from './Home';
 //   console.log("********* Before All Hook ***********");
 // });
 
-beforeEach(() => {
-  console.log("********* Before Each Hook ***********");
-});
+// beforeEach(() => {
+//   console.log("********* Before Each Hook ***********");
+// });
 
 test('renders learn react link', () => {
   render(<Home />);

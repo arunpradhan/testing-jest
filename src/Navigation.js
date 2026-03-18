@@ -7,6 +7,7 @@ function Navigation() {
         <Link to="/my-form">My Form</Link> | 
         <Link to="/about">About</Link> | 
         <Link to="/users">Users</Link> | 
+        <Link to="/item">Item</Link> | 
     </div>
   );
 }
