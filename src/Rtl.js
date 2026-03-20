@@ -1,19 +1,27 @@
 
-function RtlQuery() {
+function Rtl() {
     return (
         <div>
-            <h2>Multiple elements and Custom Role</h2>
-            <label htmlFor="input1">User Name</label>
-            <input type="text" id="input1" defaultValue="Provide User Name"/>
-            <label htmlFor="input2">Age</label>
-            <input type="text" id="input2"/>
-            <button>Submit</button>
-            <button>Cancel</button>
-            <div role="dummy">
-                Hello Buddy!
-            </div>
+            <h2>RTL: getAllByRole</h2>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
+            <button>Click Me</button>
 
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
     );
 }
-export default RtlQuery;
+export default Rtl;
