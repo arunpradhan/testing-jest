@@ -1,21 +1,21 @@
 import { render, screen } from "@testing-library/react"
 import Rtl from "../Rtl"
 
-test("getAllByLabelText with multiple elements case 1", () => {
+// test("getByPlaceholderText for single input field", () => {
+//     render(<Rtl/>);
+//     const input = screen.getByLabelText("User Name");
+//     expect(input).toBeInTheDocument();
+//     const input_ = screen.getByPlaceholderText("Enter User Name");
+//     expect(input_).toBeInTheDocument();
+//     expect(input_).toHaveValue("Sam");
+// })
+
+test("getAllByPlaceholderText for multiple input field", () => {
     render(<Rtl/>);
-    const inputs = screen.getAllByLabelText("User Name");
+    const inputs = screen.getAllByPlaceholderText("Enter User Name");
     for(let i = 0; i < inputs.length; i++) {
         expect(inputs[i]).toBeInTheDocument();
-    }
-   
-})
-
-test("getAllByLabelText with multiple elements case 2", () => {
-    render(<Rtl/>);
-    const checkboxs = screen.getAllByLabelText("Skills");
-    for(let i = 0; i < checkboxs.length; i++) {
-        expect(checkboxs[i]).toBeInTheDocument();
-        expect(checkboxs[i]).toBeChecked();
+        expect(inputs[i]).toHaveValue("Sam");
     }
    
 })
