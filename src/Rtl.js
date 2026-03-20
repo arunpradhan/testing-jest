@@ -2,25 +2,13 @@
 function Rtl() {
     return (
         <div>
-            <h2>RTL: getAllByRole</h2>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
+            <h2>RTL: getByLabelText | checkbox testing with get by label text</h2>
+            <label htmlFor="user-name">User Name</label>
+            <input type="text" id="user-name" defaultValue="Sam"/>
+            
+            <label htmlFor="skills">Skills</label>
+            <input type="checkbox" id="skills" defaultChecked />
 
-            <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
         </div>
     );
 }

@@ -8,6 +8,7 @@ function Navigation() {
         <Link to="/about">About</Link> | 
         <Link to="/users">Users</Link> | 
         <Link to="/item">Item</Link> | 
+        <Link to="/rtl">RTL</Link> | 
     </div>
   );
 }

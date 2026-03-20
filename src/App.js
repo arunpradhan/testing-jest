@@ -8,6 +8,7 @@ import Navigation from './Navigation';
 import About from './About';
 import Users from './Users';
 import Item from './Item';
+import Rtl from './Rtl';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/users' element={<Users/>}/>
         <Route path='/item' element={<Item />}/>
+        <Route path='/rtl' element={<Rtl/>}/>
       </Routes>
     </BrowserRouter>
   );

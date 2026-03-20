@@ -1,15 +1,16 @@
-import { render, screen } from "@testing-library/react";
-import Rtl from "../Rtl";
+import { render, screen } from "@testing-library/react"
+import Rtl from "../Rtl"
 
-test("getAllByRole", ()=>{
+test("getByLabelText test case 1", () => {
     render(<Rtl/>);
-    const btns = screen.getAllByRole("button");
-    for ( let i = 0; i < btns.length; i++) {
-        expect(btns[i]).toBeInTheDocument();
-    }
+    const input = screen.getByLabelText("User Name");
+    expect(input).toBeInTheDocument();
+    expect(input).toHaveValue("Sam");
+})
 
-    const options = screen.getAllByRole("option");
-    for ( let i = 0; i < options.length; i++) {
-        expect(options[i]).toBeInTheDocument();
-    }
+test("getByLabelText test case 2", () => {
+    render(<Rtl/>);
+    const check_box = screen.getByLabelText("Skills");
+    expect(check_box).toBeInTheDocument();
+    expect(check_box).toBeChecked();
 })
