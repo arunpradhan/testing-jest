@@ -2,11 +2,12 @@
 function Rtl() {
     return (
         <div>
-            <h2>RTL: getByPlaceholderText and getAllByPlaceholderText</h2>
-            <label htmlFor="user-name">User Name</label>
-            <input type="text" id="user-name" placeholder="Enter User Name" defaultValue={"Sam"}/>
-            <input type="text" id="user-name" placeholder="Enter User Name" defaultValue={"Sam"}/>
-            <input type="text" id="user-name" placeholder="Enter User Name" defaultValue={"Sam"}/>
+            <h2>RTL: getByText and getAllByText</h2>
+            <button>Login</button>
+            <p className="pStyle" id="pID">P Tag Testing</p>
+            <h3>H3 Heading</h3>
+            <h3>H3 Heading</h3>
+            <h3>H3 Heading</h3>
             
 
         </div>
