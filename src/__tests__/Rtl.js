@@ -1,14 +1,19 @@
-import { render, screen } from "@testing-library/react"
+import { render, screen, configure } from "@testing-library/react"
 import Rtl from "../Rtl"
 
-test("getByTestId testing", () => {
+// test("Overriding data-testid testing", () => {
+//     render(<Rtl/>);
+//     const divId = screen.getByTestId("div_test_id");
+//     expect(divId).toBeInTheDocument();
+// })
+
+{/* 
+    If we want to use another id like element-id in place of data-testid 
+*/}
+configure({testIdAttribute: "element-id"})
+
+test("Overriding data-testid testing", () => {
     render(<Rtl/>);
-    // const divId = screen.getByTestId("div_1");
-    // expect(divId).toBeInTheDocument();
-    const h2Id = screen.getByTestId("h2-heading");
-    expect(h2Id).toBeInTheDocument();
-    const divId = screen.getAllByTestId("div_1");
-    for(let i = 0; i < divId.length; i++) {
-        expect(divId[i]).toBeInTheDocument();
-    }
+    const divId = screen.getByTestId("div_test_id");
+    expect(divId).toBeInTheDocument();
 })

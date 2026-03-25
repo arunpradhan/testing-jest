@@ -2,12 +2,14 @@
 function Rtl() {
     return (
         <div>
-            <h2>RTL: getByTestId and getAllByTestId</h2>
-            <div data-testid="div_1">
+            <h2>RTL: Overriding data-testid</h2>
+            {/* <div data-testid="div_test_id">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </div>
-            <h2 data-testid="h2-heading">What is Lorem Ipsum?</h2>
-            <div data-testid="div_1">
+            </div> */}
+            {/* 
+                If we want to use another id like element-id in place of data-testid 
+            */}
+            <div element-id="div_test_id">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </div>
 
